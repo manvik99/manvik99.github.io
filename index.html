@@ -2,86 +2,145 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Manvik Nanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website of an incoming PhD student in Computer Science." />
+  <title>Your Name | PhD Student</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 40px;
-      background-color: #f9f9f9;
+      font-family: system-ui, sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
       color: #333;
+      background-color: #fafafa;
     }
 
-    .top-section {
+    .header-container {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
     }
 
-    .profile-pic {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        object-position: center;
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
     }
 
-    .info-and-about {
-      flex: 1;
+    .header-text {
+      flex-grow: 1;
     }
 
-    .name {
-      font-size: 36px;
-      margin-bottom: 5px;
+    .header-text h1 {
+      margin: 0.2rem 0;
+      font-size: 1.75rem;
     }
 
-    .email {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 10px; /* Reduced from 20px */
-    }
-
-    nav {
-      margin-bottom: 20px; /* Adjusted for tighter spacing */
+    .header-text p {
+      margin: 0.3rem 0 0.8rem;
+      font-size: 1rem;
     }
 
     nav a {
-      margin-right: 20px;
+      margin-right: 1rem;
       text-decoration: none;
-      color: #007acc;
-      font-weight: bold;
+      color: #0366d6;
+      font-weight: 500;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    h2 {
+      color: #111;
+      margin-top: 2rem;
     }
 
-    .about {
-      font-size: 18px;
-      line-height: 1.6;
-      max-width: 800px;
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    a {
+      color: #0366d6;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .header-text {
+        align-items: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0.25rem 0.5rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="top-section">
-    <img src="image_1.jpg" alt="Profile Photo" class="profile-pic" />
-    
-    <div class="info-and-about">
-      <div class="name">Manvik Nanda</div>
-      <div class="email">mbnanda2@illinois.edu</div>
+  <header class="header-container">
+    <img src="image_1.jpg" alt="Profile photo" class="profile-img" />
+    <div class="header-text">
+      <h1>Your Full Name</h1>
+      <p>Incoming PhD Student in Computer Science<br>
+      University of XYZ</p>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#research">Research</a>
-        <a href="#cv">CV</a>
+        <a href="#">Home</a>
+        <a href="#">Research</a>
+        <a href="#">CV</a>
+        <a href="#">Contact</a>
       </nav>
-      <div class="about">
-        <p>
-          I am passionate about operating systems, system security, and distributed computing. I enjoy working on low-level problems that intersect software design and hardware constraints. When I’m not debugging kernel code or analyzing system traces, you’ll probably find me out in nature or reading about computer science history.
-        </p>
-      </div>
     </div>
-  </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I am an incoming PhD student in the Department of Computer Science at the University of XYZ, starting Fall 2025. My research interests lie in <em>operating systems</em>, <em>distributed systems</em>, and <em>systems security</em>. I am passionate about building reliable and efficient software infrastructure.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>University of XYZ</strong> – PhD in Computer Science (Fall 2025 - )</li>
+        <li><strong>ABC University</strong> – MCS in Computer Science, 2024</li>
+        <li><strong>Kalinga Institute of Industrial Technology</strong> – B.Tech, 2019</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research</h2>
+      <p>I am currently exploring topics related to resource scheduling and fairness in Linux kernel schedulers. My long-term goal is to design operating systems that adapt better to modern workloads and hardware.</p>
+      <p>Previously, I worked on recommender systems and MLOps infrastructure at a major media tech company.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: your@email.com</p>
+      <p>GitHub: <a href="https://github.com/manvik99" target="_blank">manvik99</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">your-linkedin</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
