@@ -13,19 +13,19 @@
       color: #333;
     }
 
-    .header {
+    .top-section {
       display: flex;
       align-items: flex-start;
     }
 
     .profile-pic {
-      width: 200px;
-      height: 200px;
+      width: 250px;
+      height: auto;
       margin-right: 30px;
-      border-radius: 0; /* No circular image */
+      object-fit: cover;
     }
 
-    .info {
+    .info-and-about {
       flex: 1;
     }
 
@@ -37,11 +37,11 @@
     .email {
       font-size: 16px;
       color: #555;
-      margin-bottom: 20px;
+      margin-bottom: 10px; /* Reduced from 20px */
     }
 
     nav {
-      margin: 30px 0;
+      margin-bottom: 20px; /* Adjusted for tighter spacing */
     }
 
     nav a {
@@ -64,9 +64,10 @@
 </head>
 <body>
 
-  <div class="header">
+  <div class="top-section">
     <img src="image_1.jpg" alt="Profile Photo" class="profile-pic" />
-    <div class="info">
+    
+    <div class="info-and-about">
       <div class="name">Manvik Nanda</div>
       <div class="email">mbnanda2@illinois.edu</div>
       <nav>
@@ -74,13 +75,12 @@
         <a href="#research">Research</a>
         <a href="#cv">CV</a>
       </nav>
+      <div class="about">
+        <p>
+          I am passionate about operating systems, system security, and distributed computing. I enjoy working on low-level problems that intersect software design and hardware constraints. When I’m not debugging kernel code or analyzing system traces, you’ll probably find me out in nature or reading about computer science history.
+        </p>
+      </div>
     </div>
-  </div>
-
-  <div class="about">
-    <p>
-      I am passionate about operating systems, system security, and distributed computing. I enjoy working on low-level problems that intersect software design and hardware constraints. When I’m not debugging kernel code or analyzing system traces, you’ll probably find me out in nature or reading about computer science history.
-    </p>
   </div>
 
 </body>
