@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <button id="toggle-theme">🌙 Dark Mode</button>
   <header class="header-container">
     <img src="image_new.jpeg" alt="Profile photo" class="profile-img" />
     <div class="header-text">
@@ -52,14 +51,5 @@
   <footer>
     <p>&copy; 2025 Manvik Nanda. All rights reserved.</p>
   </footer>
-<script>
-  const button = document.getElementById('toggle-theme');
-  button.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    button.textContent = document.body.classList.contains('dark-mode') 
-      ? '☀️ Light Mode' 
-      : '🌙 Dark Mode';
-  });
-</script>
 </body>
 </html>
