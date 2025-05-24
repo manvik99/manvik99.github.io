@@ -28,7 +28,8 @@ body {
     object-fit: cover;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
-    border: 2px solid darkgray;
+    /* border: 2px solid darkgray; */
+    border: 2px solid #0a1110;
 }
 
 .header-text {
