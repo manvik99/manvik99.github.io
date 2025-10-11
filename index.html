@@ -1,55 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="force-light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal website of an incoming PhD student in Computer Science." />
-  <title>Manvik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manvik Nanda — Systems & OS</title>
+  <meta name="description" content="Incoming PhD (Utah). Research interests: operating systems, systems security, scheduling fairness, userspace drivers." />
+
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-  <header class="header-container">
-    <img src="image_new.jpeg" alt="Profile photo" class="profile-img" />
-    <div class="header-text">
-      <h1>Manvik Nanda</h1>
-      <p>mbnanda2@illinois.edu</p>
-      <nav>
-        <a href="Manvik_Nanda_Resume.pdf">CV</a>
-        <a href="https://www.linkedin.com/in/manvik-nanda/">LinkedIn</a>
-        <a href="https://github.com/manvik99">GitHub</a>
-        <!-- <a href="mountains.jpg">Misc</a> -->
+  <header class="hero">
+    <img src="ds_new.jpeg" alt="Portrait of Manvik Nanda" class="avatar">
+    <div class="hero-text">
+      <h1 class="name">Manvik Nanda</h1>
+      <p class="subtitle">PhD Student · University of Utah</p>
+
+      <nav class="links">
+          <a class="icon-btn" href="mailto:u1584242@umail.utah.edu" data-tooltip="Email"><i data-lucide="mail"></i></a>
+          <a class="icon-btn" href="Manvik_Nanda_Resume.pdf" target="_blank" rel="noopener" data-tooltip="CV"><i data-lucide="file-text"></i></a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/manvik-nanda/" target="_blank" rel="noopener" data-tooltip="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a class="icon-btn" href="https://github.com/manvik99" target="_blank" rel="noopener" data-tooltip="GitHub"><i data-lucide="github"></i></a>
       </nav>
-    </div>
+</div>
   </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I am an incoming PhD student in the Department of Computer Science at the University of Utah, starting Fall 2025. My research interests lie in <em>operating systems</em> and <em>systems security</em>. Prior to this, I was a master's student at the University of Illinois at Urbana-Champaign, where I worked with Prof. <a href="https://tianyin.github.io/" target="_blank">Tianyin Xu</a>.</p>
+  <main class="container">
+    <section id="about">
+      <!-- <h2>About</h2> -->
+      <p>
+        I'm a first-year PhD student at the <a href="https://www.cs.utah.edu/">Kahlert School of Computing, University of Utah</a>, 
+        advised by Prof. <a href="https://mars-research.github.io/aburtsev/">Anton Burtsev</a>.
+        My research interests lie in <em>computer systems</em>—especially <em>operating systems</em>.
+        More specifically, I work with the <a href="https://mars-research.github.io/">Mars Research Group</a>, where I focus on systems design and kernel-level research.
+        Previously, I completed my master's in Computer Science at the <a href="https://siebelschool.illinois.edu/">University of Illinois Urbana-Champaign</a>, where I worked with Prof. <a href="https://tianyin.github.io/">Tianyin Xu</a> on
+        software correctness. 
+      </p>
     </section>
-    <!-- <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>University of XYZ</strong> – PhD in Computer Science (Fall 2025 - )</li>
-        <li><strong>ABC University</strong> – MCS in Computer Science, 2024</li>
-        <li><strong>Kalinga Institute of Industrial Technology</strong> – B.Tech, 2019</li>
-      </ul>
-    </section> -->
-    <!-- <section>
-      <h2>Research</h2>
-      <p>I am currently exploring topics related to resource scheduling and fairness in Linux kernel schedulers. My long-term goal is to design operating systems that adapt better to modern workloads and hardware.</p>
-      <p>Previously, I worked on recommender systems and MLOps infrastructure at a major media tech company.</p>
-    </section> -->
-    <!-- <section>
-      <h2>Contact</h2>
-      <p>Email: your@email.com</p>
-      <p>GitHub: <a href="https://github.com/manvik99" target="_blank">manvik99</a></p>
-      <p>LinkedIn: <a href="#" target="_blank">your-linkedin</a></p>
+
+    <!-- <section id="publications">
+      <h2>Publications</h2>
+      <ol>
+        <li>
+          <strong>Toward Fair Scheduling for Multi-Threaded Workloads in Linux</strong> —
+          M. Nanda, T. Xu. Preprint, 2025.
+          <a href="#" target="_blank" rel="noopener">PDF</a> ·
+          <a href="#" target="_blank" rel="noopener">BibTeX</a>
+        </li>
+        <li>
+          <strong>Userspace Drivers in Rust: A Case for Safe DMA</strong> — M. Nanda. Workshop draft.
+          <a href="#" target="_blank" rel="noopener">PDF</a>
+        </li>
+      </ol>
     </section> -->
   </main>
 
-  <footer>
-    <p>&copy; 2025 Manvik Nanda. All rights reserved.</p>
+  <footer class="foot">
+    <span>&copy; <span id="year"></span> Manvik Nanda</span>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
